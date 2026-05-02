@@ -1,0 +1,15 @@
+{
+  "name": "tomasfloores-site",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Sitio personal con integracion de Spotify now playing.",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "mongodb": "^7.2.0"
+  }
+}

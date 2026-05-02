@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tomás Flores (tomasfloores_) | Instagram</title>
+  <meta name="description" content="Portfolio personal de Tomás Flores (también conocido como tomazit o tomasfloores_). Galería de fotos, pensamientos, música y desarrollo."/>
+  <meta name="keywords" content="Tomás Flores, tomazit, tomasfloores_, portfolio tomas flores, fotografía, desarrollo web, rosario, estudiante sistemas"/>
+  <meta name="author" content="Tomás Flores"/>
+  <meta name="robots" content="index, follow"/>
+  <link rel="icon" type="image/png" href="favicon.png"/>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Raleway:wght@200;300;400&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+  <canvas id="stars-canvas"></canvas>
+  <div class="shooting-stars-layer" id="shootingStarsLayer" aria-hidden="true"></div>
+  <div class="intro-title-splash" aria-hidden="true">
+    <span class="intro-title-text">tomasfloores_</span>
+  </div>
+
+  <!-- Constelación top-right -->
+  <svg class="constellation const-top-right" viewBox="0 0 180 160" xmlns="http://www.w3.org/2000/svg">
+    <line class="const-line" x1="140" y1="10"  x2="110" y2="55"/>
+    <line class="const-line" x1="110" y1="55"  x2="80"  y2="80"/>
+    <line class="const-line" x1="80"  y1="80"  x2="105" y2="115"/>
+    <line class="const-line" x1="105" y1="115" x2="155" y2="100"/>
+    <line class="const-line" x1="155" y1="100" x2="140" y2="10"/>
+    <circle class="const-dot" cx="140" cy="10"  r="1.6"/>
+    <circle class="const-dot" cx="110" cy="55"  r="1.2"/>
+    <circle class="const-dot" cx="80"  cy="80"  r="1.4"/>
+    <circle class="const-dot" cx="105" cy="115" r="1.1"/>
+    <circle class="const-dot" cx="155" cy="100" r="1.8"/>
+  </svg>
+
+  <!-- Constelación bottom-left -->
+  <svg class="constellation const-bot-left" viewBox="0 0 160 140" xmlns="http://www.w3.org/2000/svg">
+    <line class="const-line" x1="20"  y1="120" x2="50"  y2="80"/>
+    <line class="const-line" x1="50"  y1="80"  x2="90"  y2="60"/>
+    <line class="const-line" x1="90"  y1="60"  x2="130" y2="40"/>
+    <line class="const-line" x1="50"  y1="80"  x2="60"  y2="110"/>
+    <circle class="const-dot" cx="20"  cy="120" r="1.2"/>
+    <circle class="const-dot" cx="50"  cy="80"  r="1.5"/>
+    <circle class="const-dot" cx="90"  cy="60"  r="1.1"/>
+    <circle class="const-dot" cx="130" cy="40"  r="1.8"/>
+    <circle class="const-dot" cx="60"  cy="110" r="1.0"/>
+  </svg>
+
+  <main>
+
+    <header>
+      <h1 class="site-title">tomasfloores_</h1>
+      <p class="site-subtitle">totoo</p>
+    </header>
+
+    <section class="quote-section">
+      <p class="quote-text">
+        A solas en la inmensidad del cosmos,<br>
+        la melancolía es el susurro de las estrellas.
+      </p>
+    </section>
+
+    <nav class="categories" aria-label="Categorías">
+      <div class="category">
+        <svg class="cat-icon" viewBox="0 0 24 24"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        <span class="cat-label">noche</span>
+      </div>
+      <div class="category">
+        <svg class="cat-icon" viewBox="0 0 24 24">
+          <rect x="4" y="5" width="16" height="11" rx="1.5"/>
+          <path d="M9 19h6"/>
+          <path d="M12 16v3"/>
+        </svg>
+        <span class="cat-label">chill</span>
+      </div>
+      <div class="category">
+        <svg class="cat-icon" viewBox="0 0 24 24"><path d="M12 2 L13.5 10.5 L22 12 L13.5 13.5 L12 22 L10.5 13.5 L2 12 L10.5 10.5 Z"/></svg>
+        <span class="cat-label">cielo</span>
+      </div>
+    </nav>
+
+    <div class="divider"></div>
+
+    <section class="gallery-section">
+      <div class="gallery-wrapper" id="galleryWrapper">
+        <div class="gallery-fade"></div>
+        <div class="gallery-grid">
+
+        <div class="photo-card" data-category="noche" data-desc="El pedo que tuve esa noche solo lo sabe cony y darak. PD: yakansa no cansa">
+          <img src="images/WhatsApp Image 2026-04-20 at 22.39.15.jpeg" alt="El pedo que tuve esa noche solo lo sabe cony y darak. PD: yakansa no cansa">
+        </div>
+
+        <div class="photo-card" data-category="noche" data-desc="Todos vimos la luna muchas veces. Pero cada vez que la vemos, se siente diferente. Sentís amor, felicidad, soledad. En esta foto, particularmente, sentí melancolía. ">
+          <img src="images/WhatsApp Image 2026-04-20 at 22.39.16 (1).jpeg" alt="Todos vimos la luna muchas veces. Pero cada vez que la vemos, se siente diferente. Sentís amor, felicidad, soledad. En esta foto, particularmente, sentí melancolía. ">
+        </div>
+
+        <div class="photo-card" data-category="cielo" data-desc="El atardecer en el momento más bajo de mi vida. Pero, no deja de ser hermoso.">
+          <img src="images/WhatsApp Image 2026-04-20 at 22.39.16.jpeg" alt="El atardecer en el momento más bajo de mi vida. Pero, no deja de ser hermoso.">
+        </div>
+
+        <div class="photo-card" data-category="cielo" data-desc="No recuerdo dónde ni cuándo saqué esto, pero me pareció genial.">
+          <img src="images/WhatsApp Image 2026-04-20 at 22.39.17 (1).jpeg" alt="No recuerdo dónde ni cuándo saqué esto, pero me pareció genial.">
+        </div>
+
+        <div class="photo-card" data-category="cielo" data-desc="Siempre me pareció flashero el patrón que tienen las nubes a veces.">
+          <img src="images/WhatsApp Image 2026-04-20 at 22.39.17 (2).jpeg" alt="Siempre me pareció flashero el patrón que tienen las nubes a veces.">
+        </div>
+
+        <div class="photo-card" data-category="bosque" data-desc="Bichito. ft. cony.">
+          <img src="images/WhatsApp Image 2026-04-20 at 22.39.17.jpeg" alt="Bichito. ft. cony.">
+        </div>
+
+        <div class="photo-card" data-category="noche" data-desc="Tiro brazo nomás. Probablemente cuando leas esto ya no tenga el brazo así (o sea, lo tendré peor (más flaco)).">
+          <img src="images/WhatsApp Image 2026-04-20 at 22.39.18 (1).jpeg" alt="Tiro brazo nomás. Probablemente cuando leas esto ya no tenga el brazo así (o sea, lo tendré peor (más flaco)).">
+        </div>
+
+        <div class="photo-card" data-category="noche" data-desc="Zona sur de Rosario, lo sé, pero no deja de ser hermoso.">
+          <img src="images/WhatsApp Image 2026-04-20 at 22.39.18 (2).jpeg" alt="Zona sur de Rosario, lo sé, pero no deja de ser hermoso.">
+        </div>
+
+        <div class="photo-card" data-category="noche" data-desc="Saluden al negrito (gato de mi hermana).">
+          <img src="images/WhatsApp Image 2026-04-20 at 22.39.18.jpeg" alt="Saluden al negrito (gato de mi hermana).">
+        </div>
+
+        <div class="photo-card" data-category="noche" data-desc="4 pibes. LoL.">
+          <img src="images/WhatsApp Image 2026-04-20 at 22.39.19 (1).jpeg" alt="4 pibes. LoL.">
+        </div>
+
+        <div class="photo-card" data-category="noche" data-desc="Poético.">
+          <img src="images/WhatsApp Image 2026-04-20 at 22.39.19 (2).jpeg" alt="Poético.">
+        </div>
+
+        <div class="photo-card" data-category="noche" data-desc="Juro que no está enojada.">
+          <img src="images/WhatsApp Image 2026-04-20 at 22.39.19.jpeg" alt="Juro que no está enojada.">
+        </div>
+
+        <div class="photo-card" data-category="noche" data-desc="Que no se note que no me gusta hacer hombro.">
+          <img src="images/WhatsApp Image 2026-04-20 at 22.39.20.jpeg" alt="Que no se note que no me gusta hacer hombro.">
+        </div>
+
+        <div class="photo-card" data-category="noche" data-desc="Simplemente, yo.">
+          <img src="images/WhatsApp Image 2026-04-20 at 22.39.21 (1).jpeg" alt="Simplemente, yo.">
+        </div>
+
+        <div class="photo-card" data-category="noche" data-desc="Jamás me voy a cansar del cielo. En ninguna de sus fases.">
+          <img src="images/WhatsApp Image 2026-04-20 at 22.39.21 (2).jpeg" alt="Jamás me voy a cansar del cielo. En ninguna de sus fases.">
+        </div>
+
+        <div class="photo-card" data-category="noche" data-desc="Belleza.">
+          <img src="images/WhatsApp Image 2026-04-20 at 22.39.21 (3).jpeg" alt="Belleza.">
+        </div>
+
+        <div class="photo-card" data-category="bosque" data-desc="Es más chiquito de lo que parece. Mucho más chiquito.">
+          <img src="images/WhatsApp Image 2026-04-20 at 22.39.21.jpeg" alt="Es más chiquito de lo que parece. Mucho más chiquito.">
+        </div>
+
+        <div class="photo-card" data-category="bosque" data-desc="Creo que estaba sacando mi última materia del secundario (?).">
+          <img src="images/WhatsApp Image 2026-04-20 at 22.39.22 (1).jpeg" alt="Creo que estaba sacando mi última materia del secundario (?).">
+        </div>
+
+        <div class="photo-card" data-category="bosque" data-desc="Salúdenlos.">
+          <img src="images/WhatsApp Image 2026-04-20 at 22.39.22 (2).jpeg" alt="Salúdenlos.">
+        </div>
+
+        <div class="photo-card" data-category="bosque" data-desc="Calorías.">
+          <img src="images/WhatsApp Image 2026-04-20 at 22.39.22 (3).jpeg" alt="Calorías.">
+        </div>
+
+        <div class="photo-card" data-category="bosque" data-desc="No sabía cómo ajustar la cámara para que se note toda la belleza de la imagen.">
+          <img src="images/WhatsApp Image 2026-04-20 at 22.39.22.jpeg" alt="No sabía cómo ajustar la cámara para que se note toda la belleza de la imagen.">
+        </div>
+
+        <div class="photo-card" data-category="cielo" data-desc="No debo haber pisado los 70kg en esta foto.">
+          <img src="images/WhatsApp Image 2026-04-20 at 22.39.23 (1).jpeg" alt="No debo haber pisado los 70kg en esta foto.">
+        </div>
+
+        <div class="photo-card" data-category="cielo" data-desc="Pink.">
+          <img src="images/WhatsApp Image 2026-04-20 at 22.39.23 (2).jpeg" alt="Pink.">
+        </div>
+
+        <div class="photo-card" data-category="cielo" data-desc="Simplemente el Parque Independencia.">
+          <img src="images/WhatsApp Image 2026-04-20 at 22.39.23.jpeg" alt="Simplemente el Parque Independencia.">
+        </div>
+
+        <div class="photo-card" data-category="cielo" data-desc="Punta del Este. Otros tiempos.">
+          <img src="images/WhatsApp Image 2026-04-20 at 22.39.24 (1).jpeg" alt="Punta del Este. Otros tiempos.">
+        </div>
+
+        <div class="photo-card" data-category="cielo" data-desc="Otra vez, PDE.">
+          <img src="images/WhatsApp Image 2026-04-20 at 22.39.24 (2).jpeg" alt="Otra vez, PDE.">
+        </div>
+
+        <div class="photo-card" data-category="cielo" data-desc="El amanecer es precioso.">
+          <img src="images/WhatsApp Image 2026-04-20 at 22.39.25 (1).jpeg" alt="El amanecer es precioso.">
+        </div>
+
+        <div class="photo-card" data-category="cielo" data-desc="Humilde set-up.">
+          <img src="images/WhatsApp Image 2026-04-20 at 22.39.25 (2).jpeg" alt="Humilde set-up.">
+        </div>
+
+        <div class="photo-card" data-category="cielo" data-desc="Creo que fue la primera vez que fumé porro. Y la última.">
+          <img src="images/WhatsApp Image 2026-04-20 at 22.39.25 (3).jpeg" alt="Creo que fue la primera vez que fumé porro. Y la última.">
+        </div>
+
+        <div class="photo-card" data-category="cielo" data-desc="Quiero creer que se quieren.">
+          <img src="images/WhatsApp Image 2026-04-20 at 22.39.25.jpeg" alt="Quiero creer que se quieren.">
+        </div>
+
+        <div class="photo-card" data-category="cielo" data-desc="Falta obra pública. No sé cuál es el motivo de esta imagen.">
+          <img src="images/WhatsApp Image 2026-04-20 at 22.39.26 (1).jpeg" alt="Falta obra pública. No sé cuál es el motivo de esta imagen.">
+        </div>
+
+        <div class="photo-card" data-category="cielo" data-desc="Otro atardecer. Soy un poco pesado, lo sé.">
+          <img src="images/WhatsApp Image 2026-04-20 at 22.39.26 (2).jpeg" alt="Otro atardecer. Soy un poco pesado, lo sé.">
+        </div>
+
+        <div class="photo-card" data-category="cielo" data-desc="Sin contexto.">
+          <img src="images/WhatsApp Image 2026-04-20 at 22.39.26.jpeg" alt="Sin contexto.">
+        </div>
+
+        <div class="photo-card" data-category="cielo" data-desc="No tenía tantas preocupaciones cuando saqué esta foto. No soy nostálgico. Pero es verdad.">
+          <img src="images/WhatsApp Image 2026-04-20 at 22.39.27 (1).jpeg" alt="No tenía tantas preocupaciones cuando saqué esta foto. No soy nostálgico. Pero es verdad.">
+        </div>
+
+        <div class="photo-card" data-category="cielo" data-desc="Ese día volaron árboles. Y techos.">
+          <img src="images/WhatsApp Image 2026-04-20 at 22.39.27 (2).jpeg" alt="Ese día volaron árboles. Y techos.">
+        </div>
+
+        <div class="photo-card" data-category="cielo" data-desc="Después de esta imagen se cayó de la silla. Lo juro.">
+          <img src="images/WhatsApp Image 2026-04-20 at 22.39.27.jpeg" alt="Después de esta imagen se cayó de la silla. Lo juro.">
+        </div>
+
+        <div class="photo-card" data-category="noche" data-desc="Me encanta cuando el cielo es rosa.">
+          <img src="images/WhatsApp Image 2026-04-20 at 22.39.28 (1).jpeg" alt="Me encanta cuando el cielo es rosa.">
+        </div>
+
+        <div class="photo-card" data-category="noche" data-desc="Córdoba. Muy, pero muy alto. Muy hermoso.">
+          <img src="images/WhatsApp Image 2026-04-20 at 22.39.28 (2).jpeg" alt="Córdoba. Muy, pero muy alto. Muy hermoso.">
+        </div>
+
+        <div class="photo-card" data-category="noche" data-desc="'Dejá la facu tomi dale'.">
+          <img src="images/WhatsApp Image 2026-04-20 at 22.39.28.jpeg" alt="'Dejá la facu tomi dale'.">
+        </div>
+
+        <div class="photo-card" data-category="noche" data-desc="Chill de cojones">
+          <img src="images/WhatsApp Image 2026-04-23 at 22.14.29.jpeg" alt="Chill de cojones">
+        </div>
+
+        <div class="photo-card" data-category="noche" data-desc="Chill de cojones">
+          <img src="images/pfp.png" alt="Creo que el bigote ya no va a volver.">
+        </div>
+
+        <div class="photo-card" data-category="noche" data-desc="Chill de cojones">
+          <img src="images/file_00000000922c71f5be3ab20a86f9e17f.png" alt="Poético. Amo la luna.">
+        </div>
+
+        <div class="photo-card" data-category="noche" data-desc="Chill de cojones">
+          <img src="images/20260502_150725.jpg" alt="Se quiere subir pero lamentablemente no puede.">
+        </div>
+        
+
+      </div><!-- /.gallery-grid -->
+      </div><!-- /.gallery-wrapper -->
+
+      <button class="gallery-toggle" id="galleryToggle" aria-label="Ver todas las fotos">
+        <svg class="toggle-arrow" viewBox="0 0 24 24">
+          <polyline points="6 9 12 15 18 9"/>
+        </svg>
+        <span class="gallery-toggle-label"></span>
+      </button>
+
+    </section>
+
+    <section class="deep-space-zone">
+      <div class="deep-space-ornament deep-space-ornament-top" aria-hidden="true"></div>
+      <div class="deep-space-ornament deep-space-ornament-bottom" aria-hidden="true"></div>
+
+    <section class="interests-section" aria-labelledby="interests-title">
+      <div class="interests-shell">
+        <p class="section-kicker">un poco más de mí</p>
+        <h2 class="interests-title" id="interests-title">Boludeces. Mis boludeces.</h2>
+        <p class="interests-intro">
+          Entre canciones, obsesiones raras y costumbres estúpidas. Simplemente detalles.
+        </p>
+
+        <article class="study-card">
+          <div class="study-card-header">
+            <span class="study-card-tag">UTN</span>
+            <h3 class="study-card-title">Estudiando Ingeniería en Sistemas</h3>
+          </div>
+
+          <div class="study-card-grid">
+            <div class="study-block study-block-formulas">
+              <span class="study-block-label">difícil</span>
+              <p>f'(x) = lim<sub>h→0</sub> (f(x+h) - f(x)) / h</p>
+              <p>∫ (2x + 1) dx = x² + x + C</p>
+              <p>∫<sub>0</sub><sup>1</sup> e<sup>-x²</sup> dx ≈ 0.746</p>
+            </div>
+
+            <div class="study-block study-block-code">
+              <span class="study-block-label">meh</span>
+              <pre><code>double integral(double a, double b, int n) {
+    double h = (b - a) / n;
+    double sum = 0.0;
+    for (int i = 0; i &lt; n; ++i) {
+        double x = a + i * h;
+        sum += (2 * x + 1) * h;
+    }
+    return sum;
+}</code></pre>
+            </div>
+
+            <div class="study-block study-block-algebra">
+              <span class="study-block-label">MUY DIFÍCIL</span>
+              <p>A · x = b</p>
+              <p>det(A - λI) = 0</p>
+              <p>(a + b)² = a² + 2ab + b²</p>
+              <p>||v|| = √(x² + y² + z²)</p>
+            </div>
+          </div>
+        </article>
+
+        <div class="interests-grid">
+          <article class="interest-card">
+            <span class="interest-tag">música</span>
+            <h3>Sí a Arctic Monkeys</h3>
+            <p>Me gusta mucho el rock alternativo. También Chase Atlantic. Y umm... The Neighbourhood.</p>
+          </article>
+
+          <article class="interest-card">
+            <span class="interest-tag">hobbie</span>
+            <h3>Sacarle importancia al tiempo</h3>
+            <p>Puedo quedarme fácil mirando nubes, atardeceres o la luna. No por romantizar todo, sino porque a veces frenar un poco acomoda bastante la cabeza.</p>
+          </article>
+
+          <article class="interest-card">
+            <span class="interest-tag">salidas</span>
+            <h3>Juntadas simples</h3>
+            <p>Me gusta salir y ponerme tan en pedo que no reconozca ni a quién soy, pero siempre voy a preferir juntarme a charlar con amigos. Prefiero lo simple.</p>
+          </article>
+
+          <article class="interest-card">
+            <span class="interest-tag">random</span>
+            <h3>Mateholic</h3>
+            <p>¿Mate? Sí. ¿Dulce? Definitivamente no.</p>
+          </article>
+
+          <article class="interest-card">
+            <span class="interest-tag">ritual</span>
+            <h3>Casa. Mate. Música. PC.</h3>
+            <p>Siempre. Estudiando, jugando, o lo que sea, siempre en la sencillez de mi hogar.</p>
+          </article>
+
+          <article class="interest-card">
+            <span class="interest-tag">introvertido</span>
+            <h3>Hablame nomas</h3>
+            <p>Sé que quizá parezca introvertido, pero hablame, créeme que me vas a caer bien. Seas quien seas.</p>
+          </article>
+        </div>
+
+        <section class="now-playing-banner" id="nowPlayingBanner" aria-live="polite" hidden>
+          <div class="now-playing-kicker" aria-hidden="true">
+            <svg class="now-playing-kicker-icon" viewBox="0 0 24 24">
+              <path d="M4 13v3a2 2 0 0 0 2 2h1v-7H6a2 2 0 0 0-2 2z"/>
+              <path d="M17 11v7h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2h-1z"/>
+              <path d="M7 12a5 5 0 0 1 10 0"/>
+              <path d="M9 18a3 3 0 0 0 6 0"/>
+            </svg>
+          </div>
+          <a class="now-playing-card" id="nowPlayingLink" href="#" target="_blank" rel="noreferrer">
+            <img class="now-playing-cover" id="nowPlayingCover" src="" alt="">
+            <div class="now-playing-copy">
+              <p class="now-playing-text">Estoy escuchando esto ahora.</p>
+              <h3 class="now-playing-title" id="nowPlayingTitle"></h3>
+              <p class="now-playing-artist" id="nowPlayingArtist"></p>
+            </div>
+          </a>
+        </section>
+      </div>
+    </section>
+
+    <footer>
+      <svg class="cam-icon" viewBox="0 0 24 24">
+        <path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/>
+        <circle cx="12" cy="13" r="4"/>
+      </svg>
+      <nav class="social-links">
+        <a href="https://discord.com/users/totoo05_" target="_blank" rel="noreferrer">discord</a>
+        <a href="https://www.instagram.com/tomasfloores_/" target="_blank" rel="noreferrer">instagram</a>
+        <a href="https://open.spotify.com/user/31w24gtkw3vzdf4lyj5irf7ndsr4?si=97dfedb4624f4ef6" target="_blank" rel="noreferrer">spotify</a>
+        <div class="social-whatsapp-wrap">
+          <a
+            href="https://wa.me/5493413690901"
+            target="_blank"
+            rel="noreferrer"
+            id="whatsappLink"
+            aria-describedby="whatsappHint whatsappSubhint"
+          >whatsapp</a>
+          <div class="whatsapp-hint" id="whatsappHint" aria-hidden="true">don't be shy</div>
+          <div class="whatsapp-subhint" id="whatsappSubhint" aria-hidden="true">:P</div>
+        </div>
+      </nav>
+      <p class="footer-note">¿linktree? nah. café, 2 AM y autismo.</p>
+    </footer>
+
+  </main>
+
+  <script src="main.js"></script>
+  <script>
+  window.addEventListener('load', () => {
+    fetch('/api/track', {
+      method: 'POST',
+      mode: 'same-origin'
+    }).catch(err => console.error('Error tracking visit'));
+  });
+</script>
+</body>
+</html>
